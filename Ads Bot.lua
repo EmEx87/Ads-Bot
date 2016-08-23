@@ -48,7 +48,9 @@ for i=1,clicknum do
 	clicks[i] = {location =Location (_G["xcord"..i], _G["ycord"..i]), wait=_G["wait"..i]}
 end
 
-
+	regClose = Region(1190, 0, 250, 2560)
+	regClose2 = Region(0, 0, 250, 2560)
+	
 while true do
 	for i=1,#clicks do
   loc = clicks[i].location
@@ -57,10 +59,9 @@ while true do
     
 repeat
 
-	local regClose = Region(1190, 0, 250, 2560)
-	local regClose2 = Region(0, 0, 250, 2560)
 
-        Settings:set("MinSimilarity", 0.65)
+
+        Settings:set("MinSimilarity", 0.6)
 	local i1=regClose:existsClick("X1.png", 0)
 	local i2=regClose:existsClick("X2.png", 0)
 	local i3=regClose:existsClick("X3.png", 0)
