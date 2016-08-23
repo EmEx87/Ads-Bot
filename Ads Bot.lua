@@ -1,6 +1,6 @@
 --Ads-Bot v1.1
 --by EmEx
---Link to Original thread: 
+--Link to Original thread: http://ankulua.boards.net/thread/152/update-v1-view-ads-bot
 
 setImmersiveMode(true)
 
